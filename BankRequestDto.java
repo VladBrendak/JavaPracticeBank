@@ -5,6 +5,7 @@ public class BankRequestDto {
     private String name;
     private int qnt;
 
+
     public int getId() {
         return id;
     }
@@ -49,5 +50,10 @@ public class BankRequestDto {
                 ", name='" + name + '\'' +
                 ", qnt=" + qnt +
                 '}';
+    }
+
+    public BankEntity mapToEntity()
+    {
+        return new BankMapper().mapRequestDtoToEntity(this);
     }
 }

@@ -6,8 +6,8 @@ public class BankService
 
     public void addToRepository(BankRequestDto requestDto)
     {
-//        new BankRequestDto().mapToEntity();
-//        new BankRepository().add(entity);
+        BankEntity entity = requestDto.mapToEntity();
+        new BankRepository().add(entity);
     }
 
 }

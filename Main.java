@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -22,6 +23,10 @@ public class Main {
 
         BankController bankController = new BankController();
         bankController.createBank(requestDto);
+
+        BankRepository bankRepository = new BankRepository();
+
+        ArrayList<BankEntity> list = new ArrayList<BankEntity>();
 
 
 
