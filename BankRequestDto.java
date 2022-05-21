@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class BankRequestDTO {
+public class BankRequestDto {
     private int id;
     private String name;
     private int qnt;
@@ -33,7 +33,7 @@ public class BankRequestDTO {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        BankRequestDTO that = (BankRequestDTO) o;
+        BankRequestDto that = (BankRequestDto) o;
         return id == that.id && qnt == that.qnt && Objects.equals(name, that.name);
     }
 

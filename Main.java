@@ -14,7 +14,7 @@ public class Main {
         System.out.print("Enter bank qnt: ");
         int BankQnt = in.nextInt();
 
-        BankRequestDTO dto = new BankRequestDTO();
+        BankRequestDto dto = new BankRequestDto();
 
         dto.setId(BankId);
         dto.setName(BankName);
