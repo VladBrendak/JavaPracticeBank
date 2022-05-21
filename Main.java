@@ -14,12 +14,14 @@ public class Main {
         System.out.print("Enter bank qnt: ");
         int BankQnt = in.nextInt();
 
-        BankRequestDto dto = new BankRequestDto();
+        BankRequestDto requestDto = new BankRequestDto();
 
-        dto.setId(BankId);
-        dto.setName(BankName);
-        dto.setQnt(BankQnt);
+        requestDto.setId(BankId);
+        requestDto.setName(BankName);
+        requestDto.setQnt(BankQnt);
 
+        BankController bankController = new BankController();
+        bankController.createBank(requestDto);
 
 
 
