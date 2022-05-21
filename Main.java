@@ -20,9 +20,6 @@ public class Main {
         dto.setName(BankName);
         dto.setQnt(BankQnt);
 
-        System.out.println(dto.toString());
-
-
 
 
 
