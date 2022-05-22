@@ -4,10 +4,11 @@ public class BankService
 {
     public BankService() {}
 
+    private BankRepository bankRepo = new BankRepository();
+
     public void addToRepository(BankRequestDto requestDto)
     {
-        BankEntity entity = requestDto.mapToEntity();
-        new BankRepository().add(entity);
+        bankRepo.addToList(requestDto.mapToEntity());
     }
 
 }

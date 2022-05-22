@@ -4,8 +4,10 @@ public class BankController
 {
     public BankController() {}
 
+    private BankService bankService = new BankService();
+
     public void createBank(BankRequestDto requestDto)
     {
-        new BankService().addToRepository(requestDto);
+        bankService.addToRepository(requestDto);
     }
 }
