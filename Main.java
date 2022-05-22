@@ -24,11 +24,12 @@ public class Main {
         BankController bankController = new BankController();
         bankController.createBank(requestDto);
 
+        BankService bankService = new BankService();
+        bankService.addToRepository(requestDto);
+
         BankRepository bankRepository = new BankRepository();
 
         ArrayList<BankEntity> list = new ArrayList<BankEntity>();
-
-
 
     }
 }
