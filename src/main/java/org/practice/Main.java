@@ -19,7 +19,6 @@ public class Main {
 
         //TODO create unique 5 Banks
         bankController.create(bankRequestDto);
-//        bankController.create(bankRequestDto);
         //TODO Return list of banks
         System.out.println(bankController.getAllBanks());
         //TODO Get bank by id
